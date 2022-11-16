@@ -1,12 +1,15 @@
 <template>
-    <div>
-        <span>Header</span>
-    </div>
+    <header class="container">
+        <h1>{{title}}</h1>
+    </header>
 </template>
 
 <script>
     export default {
-        name:'HeaderComponent'
+        name:'HeaderComponent',
+        props: {
+            title: String,
+        }
     }
 </script>
 
